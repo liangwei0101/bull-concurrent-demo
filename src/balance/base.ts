@@ -1,4 +1,12 @@
-import { CreateDateColumn, UpdateDateColumn, DeleteDateColumn, VersionColumn, PrimaryGeneratedColumn, Column, Index } from 'typeorm';
+import {
+  CreateDateColumn,
+  UpdateDateColumn,
+  DeleteDateColumn,
+  VersionColumn,
+  PrimaryGeneratedColumn,
+  Column,
+  Index,
+} from 'typeorm';
 
 /**
  * 表基类
