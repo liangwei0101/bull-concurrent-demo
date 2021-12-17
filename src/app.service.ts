@@ -110,10 +110,10 @@ export class AppService {
 
   @Process({ name: 'test111', concurrency: 1 })
   async handleTest(job: Bull.Job<any>, done: Bull.DoneCallback) {
-    const { balanceId, amount, index } = job.data as any;
+    const { balanceId, amount, i } = job.data as any;
 
     await this.balanceService.addBalance(balanceId, amount);
-    console.log('handle queue index', index);
+    console.log('handle queue index', i);
     done();
   }
 }
